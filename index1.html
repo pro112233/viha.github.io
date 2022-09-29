@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <body> -->
+    
+    <div class=" hero">
+        <nav>
+            <img src="menu.png" class="menu-img">
+            <img src="logo.png" class="logo-img">
+            <ul>
+                <li><a  href="">Latest</a></li>
+                <li><a  href="">Modern</a></li>
+                <li><a  href="">Contemporary</a></li>
+                <li><a  href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+        
+        <div class="lamp-container">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+
+        </div>
+    <div class="text-container">
+        <h1> Latest<br>in Lighting</h1>
+            <p>I have but one lamp by which my feet 
+                are guided, and that is the lamp of experience.
+        </p>
+            <a href=""> Check all Collection </a>
+            <div class="control">
+                
+                <div class="line"><span></span></div>
+                
+
+    </div>
+    </div>
+    <script>
+     var btn= document.getElementById("btn");
+     var light= document.getElementById("light");
+    function togglebtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on")
+    } 
+    </script>
+</body>
+</html>
